@@ -1,0 +1,81 @@
+body {
+    background-color: #F7F2EA;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px;
+    
+}
+
+.names-container {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+#about {
+    width: 0%;
+    height: auto;
+    color: #000;
+    text-align: center;
+    font-size: 10vw;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1vh;
+    margin-left: 3vw;
+}
+
+#me {
+    width: 0%;
+    height: auto;
+    color: #000;
+    text-align: center;
+    font-size: 10vw;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1vh;
+    margin-left: 3vw;
+}
+
+.containers {
+    position: relative;
+    width: 100%;
+}
+
+.line1 {
+    width: calc(100% - 35vw ); /* Adjust this to align with the image */
+    height: 2px;
+    background: #000;
+    margin-top: 50px;
+}
+
+.line2 {
+    position: absolute;
+    height: 50%; /* Top of the browser to the top of the image */
+    width: 2px; /* Adjust as needed */
+    background: #000;
+    left:70vw; /* To align with the image */
+    top: 0; /* To start at the top of the browser */
+}
+
+.image-container {
+    position: absolute;
+    left: calc(45% + 1px); /* Adjust this to move the image left-right */
+    top: calc(50px - 73vh / 3); /* Adjust this to move the image up-down */
+    width: 35vw;
+    height: 73vh;
+    overflow: hidden;
+}
+
+.farah {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
