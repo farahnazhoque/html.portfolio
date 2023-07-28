@@ -5,7 +5,8 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0px;
-    
+    min-height: 100vh;
+    position: relative;
 }
 
 .names-container {
@@ -39,7 +40,7 @@ body {
     font-weight: 400;
     line-height: normal;
     margin-top: 1vh;
-    margin-left: 3vw;
+    margin-left: 8vw;
 }
 
 .containers {
@@ -48,7 +49,7 @@ body {
 }
 
 .line1 {
-    width: calc(100% - 35vw ); /* Adjust this to align with the image */
+    width: calc(100% - 35vw );
     height: 2px;
     background: #000;
     margin-top: 50px;
@@ -56,26 +57,175 @@ body {
 
 .line2 {
     position: absolute;
-    height: 50%; /* Top of the browser to the top of the image */
-    width: 2px; /* Adjust as needed */
+    height: 100%;
+    width: 2px;
     background: #000;
-    left:70vw; /* To align with the image */
-    top: 0; /* To start at the top of the browser */
+    left:70vw;
+    bottom: 0;
+    z-index: -5;
 }
 
 .image-container {
     position: absolute;
-    left: calc(45% + 1px); /* Adjust this to move the image left-right */
-    top: calc(50px - 73vh / 3); /* Adjust this to move the image up-down */
-    width: 35vw;
+    left: calc(45% + 1px);
+    top: calc(50px - 73vh / 3);
+    width: 45vw;
     height: 73vh;
     overflow: hidden;
 }
 
 .farah {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: contain;
+    z-index: 1;
+}
+
+.pclass1 {
+    margin-right: 53vw;
+    font-size: 1.5em; /* or whatever you wish the default size to be */
+}
+
+/* Smaller screens */
+@media screen and (max-width: 1200px) {
+    .pclass1 {
+        font-size: 1.2em; /* decrease font-size */
+    }
+}
+
+/* Even smaller screens */
+@media screen and (max-width: 800px) {
+    .pclass1 {
+        font-size: 1em; /* further decrease font-size */
+    }
+}
+
+.highlight {
+    color: #79c6dc;
+    font-style: bold;
+}
+
+.list1 {
+    margin-right: 53vw;
+    font-size: 1.3em; /* or whatever you wish the default size to be */
+    list-style: "✧ ";
+    color: #79c6dc;
+    line-height: 1.6;
+}
+
+/* Smaller screens */
+@media screen and (max-width: 1200px) {
+    .list1 {
+        font-size: 0.9em; /* decrease font-size */
+    }
+}
+
+/* Even smaller screens */
+@media screen and (max-width: 800px) {
+    .list1 {
+        font-size: 0.7em; /* further decrease font-size */
+    }
 }
 
 
+.list1 {
+    margin-right: 50vw;
+}
+
+
+#ellipse-container {
+    position: absolute;
+    width: 40vw;
+    height: 43vh;  
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+}
+
+#elipse2 {
+    position: absolute;
+    width: 100%;
+    height: 70%;  
+    border-radius: 50%;  
+    border: 2px solid #000;
+    background: rgba(217, 217, 217, 0.00);
+    top: 90%;
+    z-index: 0;
+}
+
+#star4 img {
+    width: 70%;
+    height: 70%;
+}
+
+#star4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 95%;
+    right: 2%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1200px) {
+    #star4 {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #star4 {
+        transform: translate(-50%, -50%) scale(0.6);
+    }
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3vh;
+    margin-left: 82vw;
+    margin-right: 70vw;
+    z-index: 1000;
+    position: absolute; 
+}
+
+
+.custom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16vw;
+    height: 10vh;
+    flex-shrink: 0; 
+    border-radius: 18px;
+    border: 1px solid #000;
+    background: #F7F2EA;
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+
+}
+
+.custom-button:hover {
+    background-color: #79c6dc;
+    color: #F7F2EA;
+}
+
+#experiences-button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 30px) {
+    .custom-button {
+        width: 80%;
+        
+
+    #experiences-button {
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    }
+}
