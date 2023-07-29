@@ -204,6 +204,7 @@ body {
     text-decoration: none;
     color: black;
     margin-top: 40px;
+    font-size: 1.5vw;
 
 }
 
@@ -220,6 +221,7 @@ body {
 @media screen and (max-width: 30px) {
     .custom-button {
         width: 80%;
+        font-size: 4vw; 
         
 
     #experiences-button {
