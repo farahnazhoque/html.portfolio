@@ -1,0 +1,185 @@
+body {
+    background-color: #F7F2EA;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px;
+    
+}
+
+.line1 {
+    width: 100%;
+    height: 1px;
+    background: #000;
+    margin-top: 50px;
+}
+.line2 {
+    position: absolute;
+    height: 90%;
+    width: 1px;
+    background: #000;
+    left:50vw;
+    right: 50vw;
+    bottom: 9.5vh;
+    z-index: -5;
+}
+
+.line3 {
+    position: absolute;
+    height: 84%;
+    width: 1px;
+    background: #000;
+    right: 95vw;
+    top: 6.7vh;
+    bottom: 10vh;
+    z-index: -5;
+}
+
+.line4 {
+    width: 100%;
+    height: 1px;
+    background: #000;
+    margin-top: 722px;
+}
+
+#ellipse1-container {
+    width: 50vw;
+    height: 15vw;
+    top: 5vh;
+    left: 0%;
+    position: absolute;
+}
+
+.inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#elipse1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 1px solid #000;
+    background: rgba(217, 217, 217, 0.00);
+    left: 5%;
+    z-index: -5;
+}
+
+#exp {
+    width: 100%;
+    height: 100%;
+    color: #000;
+    text-align: center;
+    font-size: 7vw;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3vh;
+    margin-left: 3vw;
+}
+
+#star1 img {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+#star1 {
+    position: absolute;
+    width: 100px; /* change to fixed unit */
+    height: 100px; /* change to fixed unit */
+    top: 87%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1200px) {
+    #star1 {
+        transform: translate(-50%, -50%) scale(0.6);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #star1 {
+        transform: translate(-50%, -50%) scale(0.4);
+    }
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3vh;
+    margin-left: 17vw;
+    margin-right: 82vw;
+    z-index: 1000;
+    position: absolute; 
+}
+
+
+.custom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 10vh;
+    flex-shrink: 0; 
+    border-radius: 18px;
+    border: 1px solid #000;
+    background: #F7F2EA;
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+    font-size: 1.5vw;
+
+}
+
+.custom-button:hover {
+    background-color: #79c6dc;
+    color: #F7F2EA;
+}
+
+#project-button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 30px) {
+    .custom-button {
+        width: 80%;
+        font-size: 4vw; 
+        
+
+    #projects-button {
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    }
+}
+
+.experiences {
+    margin-top: 2px;
+    margin-left: 53vw;
+    font-size: 2em; /* or whatever you wish the default size to be */
+    list-style: "✧ ";
+    color: #79c6dc;
+    line-height: 1.6;
+    z-index: -5;
+}
+
+/* Smaller screens */
+@media screen and (max-width: 1200px) {
+    .experiences {
+        font-size: 1.2em; /* decrease font-size */
+    }
+}
+
+/* Even smaller screens */
+@media screen and (max-width: 800px) {
+    .experiences {
+        font-size: 0.6em; /* further decrease font-size */
+    }
+}
