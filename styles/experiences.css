@@ -36,11 +36,18 @@ body {
     z-index: -5;
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 .line4 {
+    position: absolute;
     width: 100%;
     height: 1px;
     background: #000;
     margin-top: 722px;
+    z-index: 5;
 }
 
 #ellipse1-container {
@@ -161,25 +168,47 @@ body {
 }
 
 .experiences {
+    position: absolute;
     margin-top: 2px;
     margin-left: 53vw;
-    font-size: 2em; /* or whatever you wish the default size to be */
-    list-style: "✧ ";
-    color: #79c6dc;
-    line-height: 1.6;
+    font-size: 1.4em; /* or whatever you wish the default size to be */
+    color: black;
+    line-height: 1.2em;
     z-index: -5;
 }
 
 /* Smaller screens */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
     .experiences {
         font-size: 1.2em; /* decrease font-size */
     }
 }
 
 /* Even smaller screens */
+@media screen and (max-width: 1000px) {
+    .experiences {
+        font-size: 1.0em; /* further decrease font-size */
+    }
+}
+
 @media screen and (max-width: 800px) {
     .experiences {
-        font-size: 0.6em; /* further decrease font-size */
+        font-size: 0.8em; /* further decrease font-size */
     }
+}
+
+#ml:hover {
+    color: #79c6dc;
+}
+
+#mentor:hover {
+    color: #79c6dc;
+}
+
+#soar:hover {
+    color: #79c6dc;
+} 
+
+#wil:hover {
+    color: #79c6dc;
 }

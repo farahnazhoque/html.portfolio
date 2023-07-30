@@ -10,16 +10,21 @@
     <div class="line1"></div>
     <div class="line2"></div>
     <div class="line3"></div>
-    
-    <div class="line4"></div>
-    <div class="experiences">
-        <ul>
-            <li id="ml">Machine Learning Student Research Assistant</li>
-            <li id="soar">Program Co-Director at SOAR @UCI</li>
-            <li id="wil">Co-Vp of External Affairs at WIL @UCI</li>
-            <li id="mentor">UUMP Mentor @UCI</li>
-        </ul>
+    <div class="container">
+        <div class="experiences">
+            <ul>
+                <li onclick="ml()" id="ml">Machine Learning Student Research Assistant</li>
+                <li onclick="soar()" id="soar">Program Co-Director at SOAR @UCI</li>
+                <li onclick="wil()" id="wil">Co-Vp of External Affairs at WIL @UCI</li>
+                <li onclick="mentor()" id="mentor">UUMP Mentor @UCI</li>
+                <li onclick="la()" id="mentor">Learning Assistant for Boolean Algebra @UCI</li>
+            </ul>
+            <div id="output"></div>
+        </div>
+        <div class="line4"></div>
+
     </div>
+    
     <div id="ellipse1-container">
         <div id="elipse1"></div>
         <div id="exp">Experiences</div>
@@ -29,10 +34,12 @@
         <div class="button-container">
             <a href="index.html" class="custom-button" id="home-button">Home</a>
             <a href="about.html" class="custom-button" id="about-button">About</a>
-            <a href="projects.html" class="custom-button" id="projects-button">Projects</a>
+            <a href="https://github.com/farahnazhoque" class="custom-button" id="projects-button">Projects</a>
         </div>
         
     </div>
+
+    <script src="./js/experiences.js"></script>
     
 </body>
 </html>
