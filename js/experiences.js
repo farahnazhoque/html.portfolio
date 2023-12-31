@@ -50,3 +50,12 @@ function la() {
 
     output.innerHTML += "<p style='font-size: 0.9em;'>The role allowed me to refine my pedagogical skills and provided insight into the various ways students learn. It also enabled me to play a critical role in their academic journey, thereby contributing positively to the broader educational community.</p>";
 }
+
+function ctc() {
+    var output = document.getElementById('output');
+    output.innerHTML = "<p style='font-size: 0.7em;'>As a Backend Developer at Stand Up To Trash in Irvine since October 2023, my journey has been centered around enhancing the efficiency and effectiveness of the organization through technological innovation. My primary contribution has been the development of a comprehensive Volunteer Database System using React.js, Node.js, and PostgreSQL. This pivotal project transformed the organization’s approach to volunteer data management, transitioning from traditional manual methods to a streamlined, automated system. This shift not only optimized data handling processes but also significantly contributed to the organization's operational efficiency.</p>";
+
+    output.innerHTML += "<p style='font-size: 0.7em;'>Collaboration and user-centric design have been key aspects of my role. I was actively involved in creating a user-friendly web application interface, significantly simplifying the online logging of volunteer hours. This development not only eased the administrative workload but also improved the overall volunteer experience. By focusing on intuitive design and functionality, I ensured that the technology solutions developed were aligned with the needs and preferences of the end users.</p>";
+
+    output.innerHTML += "<p style='font-size: 0.7em;'>My tenure at Stand Up To Trash has been more than just about software development; it has been about aligning my technical expertise with the organization's conservation goals. I have taken pride in ensuring that each aspect of my work contributes meaningfully towards the broader objectives of the organization, thereby combining my passion for technology with a commitment to environmental sustainability. This experience has been immensely rewarding, allowing me to play a role in both technological and ecological advancement.</p>";
+}
